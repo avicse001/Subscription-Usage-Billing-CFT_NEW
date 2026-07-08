@@ -1,0 +1,101 @@
+{
+  "theme": {
+    "name": "Swiss & High-Contrast",
+    "mode": "light",
+    "rationale": "Perfect for a data-heavy post listing interface that prioritizes function, clear comparisons (grid vs list), and high accessibility.",
+    "archetype_id": 4
+  },
+  "typography": {
+    "fonts": {
+      "headings": "Outfit",
+      "body": "IBM Plex Sans",
+      "mono": "JetBrains Mono"
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight font-bold",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight font-semibold",
+      "h3": "text-xl sm:text-2xl tracking-tight font-medium",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm tracking-wide uppercase font-bold"
+    }
+  },
+  "colors": {
+    "background": "#FAFAFA",
+    "surface": "#FFFFFF",
+    "text_primary": "#0A0A0A",
+    "text_secondary": "#525252",
+    "border": "#000000",
+    "primary_accent": "#FF3333",
+    "secondary_accent": "#0000FF",
+    "hover_bg": "#F5F5F5"
+  },
+  "layout_and_spacing": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12",
+    "grid_view": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8",
+    "list_view": "flex flex-col gap-4",
+    "card_padding": "p-6",
+    "border_radius": "rounded-none"
+  },
+  "components": {
+    "card": {
+      "base": "relative bg-white border border-black transition-all duration-200 overflow-hidden flex flex-col",
+      "hover": "hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]",
+      "image_container": "h-48 w-full border-b border-black overflow-hidden bg-gray-100",
+      "remove_button": "absolute top-4 right-4 z-10 bg-white text-[#FF3333] hover:text-white hover:bg-[#FF3333] transition-colors p-2 border border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] flex items-center justify-center cursor-pointer"
+    },
+    "buttons": {
+      "primary": "bg-black text-white px-6 py-3 border border-black hover:bg-white hover:text-black transition-all font-medium flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-y-1 hover:translate-x-1 cursor-pointer",
+      "accent": "bg-[#FF3333] text-white px-6 py-3 border border-black hover:bg-black hover:text-white transition-all font-medium flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-y-1 hover:translate-x-1 cursor-pointer",
+      "view_toggle_wrapper": "flex items-center gap-0 border border-black w-fit shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]",
+      "view_toggle_active": "bg-black text-white px-4 py-2 flex items-center justify-center cursor-pointer",
+      "view_toggle_inactive": "bg-white text-black px-4 py-2 hover:bg-gray-100 flex items-center justify-center transition-colors cursor-pointer border-l border-transparent first:border-l-0"
+    },
+    "pagination": {
+      "wrapper": "flex justify-center items-center gap-2 mt-12",
+      "page_button": "w-10 h-10 flex items-center justify-center border border-black bg-white hover:bg-black hover:text-white transition-colors cursor-pointer font-bold shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-y-[2px] hover:translate-x-[2px]",
+      "active_page": "bg-black text-white shadow-none translate-y-[2px] translate-x-[2px]"
+    },
+    "feedback_modal": {
+      "overlay": "fixed inset-0 bg-black/60 backdrop-blur-md z-50 flex items-center justify-center p-4",
+      "container": "bg-white border-2 border-black shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] w-full max-w-lg p-8 relative flex flex-col gap-6",
+      "close_button": "absolute top-4 right-4 text-black hover:text-[#FF3333] transition-colors cursor-pointer p-1",
+      "input_group": "flex flex-col gap-2",
+      "label": "text-sm font-bold uppercase tracking-wide",
+      "input": "w-full bg-white border-2 border-black p-3 focus:outline-none focus:ring-2 focus:ring-[#0000FF] transition-all rounded-none placeholder:text-gray-400 font-mono text-sm",
+      "textarea": "w-full bg-white border-2 border-black p-3 focus:outline-none focus:ring-2 focus:ring-[#0000FF] transition-all rounded-none placeholder:text-gray-400 min-h-[120px] resize-y font-mono text-sm"
+    },
+    "loading_screen": {
+      "container": "fixed inset-0 bg-[#FAFAFA] z-[100] flex flex-col items-center justify-center gap-6",
+      "text": "text-6xl font-bold tracking-tighter uppercase",
+      "progress_bar_container": "w-64 h-2 border border-black bg-white p-0.5",
+      "progress_bar_fill": "h-full bg-[#FF3333] transition-all duration-[5000ms] ease-linear w-full"
+    }
+  },
+  "motion_and_interactions": {
+    "transitions": "transition-all duration-200 ease-in-out",
+    "card_entry": "animate-in fade-in slide-in-from-bottom-8 duration-500",
+    "card_exit": "animate-out fade-out slide-out-to-right-12 duration-300"
+  },
+  "media": {
+    "icons_library": "lucide-react",
+    "image_urls": {
+      "post_placeholders": [
+        "https://images.unsplash.com/photo-1524439654840-b12734d89414?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHw0fHxtaW5pbWFsaXN0JTIwZ2VvbWV0cmljJTIwYXJjaGl0ZWN0dXJlfGVufDB8fHxibGFja19hbmRfd2hpdGV8MTc4MzQ4OTQxMXww&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1527576539890-dfa815648363?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwZ2VvbWV0cmljJTIwYXJjaGl0ZWN0dXJlfGVufDB8fHxibGFja19hbmRfd2hpdGV8MTc4MzQ4OTQxMXww&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1520188740392-665a13f453fc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwzfHxtaW5pbWFsaXN0JTIwZ2VvbWV0cmljJTIwYXJjaGl0ZWN0dXJlfGVufDB8fHxibGFja19hbmRfd2hpdGV8MTc4MzQ4OTQxMXww&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1619857121838-997e82345250?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwZ2VvbWV0cmljJTIwYXJjaGl0ZWN0dXJlfGVufDB8fHxibGFja19hbmRfd2hpdGV8MTc4MzQ4OTQxMXww&ixlib=rb-4.1.0&q=85"
+      ]
+    }
+  },
+  "instructions_to_main_agent": {
+    "tech_stack": "React.js (use .js/.jsx, strictly no TypeScript), Tailwind CSS, Lucide React icons.",
+    "state_management": "Use Context API or Redux for global state. The state must hold the fetched posts array, current page index, view mode (grid vs list), and the visibility of the feedback modal.",
+    "data_fetching": "Fetch post data from GET https://jsonplaceholder.typicode.com/posts on initial application mount inside a useEffect.",
+    "pagination_and_removal": "Display exactly 6 cards per page based on current page index. When a user clicks the red cross on a card, filter that item out of the global posts array. Because the UI slices the array dynamically (e.g., `posts.slice(startIndex, startIndex + 6)`), removing an item will automatically shift/backfill the next item into view.",
+    "loading_screen": "Implement a full-screen loading component that displays on startup. Use a setTimeout for exactly 5000ms before removing the loading screen and revealing the main layout.",
+    "feedback_form_logic": "Form must include required fields (name, email, subject, message, rating). Disable submit button until all fields are entered correctly. Completely reset the form's local state upon successful submission and close the modal.",
+    "testing_requirements": "CRITICAL: All interactive elements MUST include a `data-testid` attribute. E.g., `data-testid='remove-card-button'`, `data-testid='view-toggle-grid'`, `data-testid='feedback-submit'`, `data-testid='page-number-1'`.",
+    "card_images": "The JSONPlaceholder API doesn't return images. Select a random image from `media.image_urls.post_placeholders` for each post to render in the `image_container` div. Apply `object-cover` to ensure it fills the space elegantly.",
+    "styling_execution": "Strictly follow the Neo-Brutalist Swiss high-contrast styling defined in layout and components. Do not add soft shadows or rounded corners. Rely heavily on solid borders and solid hard drop shadows."
+  }
+}
